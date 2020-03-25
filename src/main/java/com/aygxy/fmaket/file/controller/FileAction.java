@@ -27,6 +27,10 @@ import com.aygxy.fmaket.util.FileUtil;
 import com.aygxy.fmaket.util.GsonUtil;
 import com.aygxy.fmaket.util.Utility;
 
+/**
+ * 原有的
+ * https://github.com/569258yin/FileMaketServer.git
+ */
 @Controller
 @RequestMapping("file")
 public class FileAction {
@@ -66,7 +70,7 @@ public class FileAction {
 					DebugLog.logger.info("文件大小为：" + pContentLength + ",当前已处理：" + pBytesRead);
 				}
 			});
-			//设置编码格式 
+			//设置编码格式
 			upload.setHeaderEncoding(ENCODING);
 			//判断是否是表单提交
 			if(!ServletFileUpload.isMultipartContent(request)){
